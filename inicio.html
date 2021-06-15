@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=1, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="inicio.css">
+	<link rel="icon" type="image/jpg" href="img/favicon.jpg">
+
 	<title>proyecto</title>
 </head>
 <body>
@@ -16,15 +18,27 @@
 		<div class="haderlogo">
 			<img src="img/aea-1.svg">
 		</div>
+		
 		<nav class="hadernav">
+			
 			<a href="">INICIO</a>
 			<a href="">SOBRE NOSOTROS</a>
 			<a href="">REGISTRATE</a>
 			<a href="">CONTACTO</a>
 			<a href="">AREA DE REGISTRO</a>
 		</nav>
+		<button id="baras" onclick= mostar(); onclick=ocultar();><img class="barras" src="img/menu-three-outlined-bars.svg"></button>
 		</div>
 	</header>
+	<div class="menuresponsive" id="menu" onclick=ocultar();>
+	<nav  class="menu_responsive" >
+			<li><a class="a" href="">INICIO</a></li>
+			<li><a class="a" href="">SOBRE NOSOTROS</a></li>
+			<li><a class="a" href="">REGISTRATE</a></li>
+			<li><a class="a" href="">CONTACTO</a></li>
+			<li><a  class="a" href="">AREA DE REGISTRO</a></li>
+	</nav>
+	</div>
 	<div class="container1">
 		<div class="container1h1">
 			<h1>Asociacion Arte <br> Emergente</h1>
@@ -47,7 +61,7 @@
 			<p>Aquí comienza tu texto. Puedes hacer clic en este punto y empezar a escribir. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem.</p>
 		</div>
 	</div>
-				<div class="container3">
+		<div class="container3">
 		<div class="container3con">
 		<div class="container3conim">
 			<img src="img/2o16ce.png">
@@ -127,6 +141,21 @@
 			</div>
 		</div>
 	</div>
+
+	<script>	
+	function mostrar() {
+		document.getElementById("menu").style.display ='flex';
+	}
+	document.getElementById("baras").onclick=function(){
+		mostrar();
+	}
+	function ocultar() {
+		document.getElementById("menu").style.display ='none';	
+	}
+	document.getElementById("baras").hover=function(){
+		ocultar();
+	}
+  	</script>
 
 
 
